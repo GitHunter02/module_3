@@ -24,5 +24,3 @@ print(is_contains('Urban', ['ban', 'Urban', 'rba']))
 is_contains('work', ['home', 'Homework', 'me'])
 count_calls()
 print(calls)
-
-
