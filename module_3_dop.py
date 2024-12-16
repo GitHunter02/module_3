@@ -14,9 +14,9 @@ def calculate_structure_sum(data):
         elif isinstance(elem, str):
             sum += len(elem)
         elif isinstance(elem, (tuple, set, list)):
-            sum += calculate_structure_sum(elem)
+            sum += calculate_structure_sum(elem) #Ведет подсчет elem внутри последовательностей, проходя по верхним if elif
         elif isinstance(elem, dict):
-            sum += calculate_structure_sum(elem.items())
+            sum += calculate_structure_sum(elem.items()) #Ведет подсчет elem внутри словаря, проходя по верхним if elif
     return sum
 
 
